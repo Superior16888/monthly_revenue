@@ -8,7 +8,7 @@ import plotly.express as px
 st.title("上市公司每月營收")
 
 # Input for year and month
-year = st.slider("選擇年度", 102, 121, 112)
+year = st.slider("選擇年度", 102, 120, 112)
 month = st.slider("選擇月份", 1, 12, 9)
 
 def monthly_revenue(year, month):
