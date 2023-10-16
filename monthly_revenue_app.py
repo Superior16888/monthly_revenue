@@ -90,7 +90,7 @@ def monthly_revenue(year, month):
     # Your data retrieval and processing code here
 
 # Create the Plotly figure
-fig = px.treemap(df_filtered, 
+fig = px.treemap(df_filtered,
                  path=[px.Constant('月營收'),'產業別','公司名稱'],
                  values='營業收入-當月營收',
                  color='月營收變動',
