@@ -123,7 +123,7 @@ fig = px.treemap(df_filtered,
                  color_continuous_midpoint=0,
                  custom_data=['月營收增減','累計營收增減','累計營業收入-當月累計營收','累計營業收入-去年累計營收']) 
 fig.update_layout(autosize=True)
-fig.update_layout(margin=dict(t=30, l=10, r=10, b=5)
+fig.update_layout(margin=dict(t=30, l=10, r=10, b=5))
 fig.update_traces(hovertemplate='當月營收(億)：%{value:.0f}<br>營收增減: %{customdata[0]:.1%}<br>當年累計營收: %{customdata[2]:.0f}<br>累計營收增減: %{customdata[1]:.1%}')
 fig.update_traces(textinfo='label+percent entry')
 fig.update_traces(textfont_size=16)
