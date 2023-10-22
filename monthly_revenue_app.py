@@ -37,7 +37,7 @@ def monthly_revenue(year, month):
 
 df_filtered = monthly_revenue(year, month)
 
-limit = 0.3
+limit = 0.5
 df_filtered['月營收變動'] = np.where(df_filtered['月營收變動'] > limit, limit, 
               np.where(df_filtered['月營收變動'] < -limit, -limit, df_filtered['月營收變動']))
 fig = px.treemap(df_filtered, 
