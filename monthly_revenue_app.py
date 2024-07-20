@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 
-st.title("上市公司每月營收")
+st.title("上市公司每月營收---")
 
 # Input for year and month
 year = st.slider("選擇年度", 102, 120, 112)
